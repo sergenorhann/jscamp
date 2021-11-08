@@ -1,7 +1,7 @@
 console.log("-- FIND PRIMES --")
-function findprime(...values) {
+function findPrime(...values) {
     let primes = []
-    let nonprimes = []
+    let nonPrimes = []
     let count1 = 0;
     let count2 = 0;
     if (values.length > 0) {
@@ -11,24 +11,24 @@ function findprime(...values) {
                 count1++;
             }
             else {
-                nonprimes[count2] = values[i]
+                nonPrimes[count2] = values[i]
                 count2++;
             }
         }
         console.log("Primes : ")
         console.log(...primes)
         console.log("Not Primes : ")
-        console.log(...nonprimes)
+        console.log(...nonPrimes)
     }
     else {
         console.log("Please enter a valid number.")
     }
 
 }
-findprime(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 151)
+findPrime(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 151)
 console.log(" ")
 console.log("-- FIND FRIENDLY NUMBER --")
-function friendlynumber(number1, number2) {
+function friendlyNumber(number1, number2) {
     let total1 = 0
     let total2 = 0
     for (let i = 0; i < number1; i++) {
@@ -48,7 +48,7 @@ function friendlynumber(number1, number2) {
         console.log(number1 + " and " + number2 + " are not friends.")
     }
 }
-friendlynumber(220, 228)
+friendlyNumber(220, 228)
 
 
 let total3 = 0
