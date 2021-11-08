@@ -52,8 +52,8 @@ friendlynumber(220, 228)
 
 
 let total3 = 0
-let mukemmellsayılar = ""
-let asalsayılar = ""
+let perfectNumbers = ""
+let primeNumbers = ""
 for (let j = 0; j <= 1000; j++) {
 
     for (let i = 0; i <= j; i++) {
@@ -62,16 +62,16 @@ for (let j = 0; j <= 1000; j++) {
         }
     }
     if (total3 == (j * 2)) {
-        mukemmellsayılar += " " + j
+        perfectNumbers += " " + j
     }
     total3 = 0
     if (j % 2 != 0) {
-        asalsayılar += " " + j
+        primeNumbers += " " + j
     }
 }
 console.log(" ")
 console.log("-- FIND PERFECT NUMBERS 0-1000 --")
-console.log("PERFECT NUMBERS : " + mukemmellsayılar)
+console.log("PERFECT NUMBERS : " + perfectNumbers)
 console.log(" ")
 console.log("-- FIND PRIME NUMBERS 0-1000 --")
-console.log("PRIME NUMBERS : " + asalsayılar)
+console.log("PRIME NUMBERS : " + primeNumbers)
