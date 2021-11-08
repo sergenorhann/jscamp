@@ -68,7 +68,7 @@ for (let j = 0; j <= 1000; j++) {
     if (j % 2 != 0) {
         primeNumbers += " " + j
     }
-}
+}; 
 console.log(" ")
 console.log("-- FIND PERFECT NUMBERS 0-1000 --")
 console.log("PERFECT NUMBERS : " + perfectNumbers)
