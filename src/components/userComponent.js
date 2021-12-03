@@ -1,13 +1,12 @@
-import { BaseLogger, ElasticBaseLogger, MongoBaseLogger } from "../crossCuttingConcerns/logging/logger.js"
+import { MongoBaseLogger } from "../crossCuttingConcerns/logging/mongoBaseLogger.js"
 import Customer from "../models/customer.js"
 import User from "../models/user.js"
 import UserService from "../services/userService.js"
 
-let userService = new UserService(logger1)
+let userService = new UserService(new MongoBaseLogger())
 /*
 console.log("User Component Yüklendi")
 
-let logger1 = new MongoBaseLogger()
 
 let user1 = new User(1, "Engin", "Demiroğ", "Ankara")
 let user2 = new User(1, "Baran", "Gökçekli", "Muğla")
@@ -32,4 +31,4 @@ userService.add(customerToAdd)
 console.log(userService.customers)
 console.log(userService.employees)
 //console.log(userService.errors)
-console.log(userService.getCustomersSorted())
+//console.log(userService.getCustomersSorted())

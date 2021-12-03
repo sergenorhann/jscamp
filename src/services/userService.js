@@ -11,7 +11,6 @@ export default class UserService {
    
    load() {
         for (const user of users) {
-            console.log(user.firstName)
             switch (user.type) {
                 case "customer":
                     if (!this.checkCustomerValidityForErrors(user)) {
@@ -25,7 +24,6 @@ export default class UserService {
                     break;
                 default:
                     this.errors.push(new DataError("Wrong User Type", user))
-
                     break;
             }
         }
